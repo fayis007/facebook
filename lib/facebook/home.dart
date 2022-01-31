@@ -938,96 +938,94 @@ class _homepageState extends State<homepage> {
                   child: ListView.builder(
                       itemCount: facebook.length,
                       itemBuilder: (c, i) {
-                        return Card(
-                          child: Container(
-                            // width: 40
+                        return Container(
+                          // width: 40
                          //  height: 700,
-                            padding: EdgeInsets.all(10),
-                            // color: Colors.blueAccent,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Container(
-                                      width: 50,
-                                      height: 50,
-                                      decoration: BoxDecoration(
-                                          //  color: Colors.greenAccent,
-                                          shape: BoxShape.circle,
-                                          border: Border.all(
-                                              color: Colors.blue,
-                                              width: 2)),
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(100),
-                                        child: Image.asset(
-                                          "assets/images/mammootty.jpg",
-                                          fit: BoxFit.cover,
-                                          height: 50,
-                                          width: 50,
-                                        ),
+                          padding: EdgeInsets.all(10),
+                          // color: Colors.blueAccent,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    width: 50,
+                                    height: 50,
+                                    decoration: BoxDecoration(
+                                        //  color: Colors.greenAccent,
+                                        shape: BoxShape.circle,
+                                        border: Border.all(
+                                            color: Colors.blue,
+                                            width: 2)),
+                                    child: ClipRRect(
+                                      borderRadius:
+                                          BorderRadius.circular(100),
+                                      child: Image.asset(
+                                        "assets/images/mammootty.jpg",
+                                        fit: BoxFit.cover,
+                                        height: 50,
+                                        width: 50,
                                       ),
                                     ),
-                                    SizedBox(
-                                      width: 7,
-                                    ),
-                                    Text(
-                                      facebook[i].name!,
-                                      style: TextStyle(
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    SizedBox(
-                                      width: 200,
-                                    ),
-                                    Icon(Icons.more_horiz),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
-                                    Icon(Icons.close),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 30,
-                                ),
-                                Text(facebook[i].caption!),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Image.asset(
-                                  "assets/images/mammootty.jpg",
-                                  fit: BoxFit.cover,
-                                  height: 350,
-                                  width: MediaQuery.of(context).size.width,
-                                ),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    FlatButton.icon(
-                                        splashColor: Colors.blueAccent,
-                                        focusColor: Colors.blueAccent,
-                                        onPressed: () {},
-                                        icon: Icon(
-                                            Icons.thumb_up_alt_outlined),
-                                        label: Text("Like")),
-                                    FlatButton.icon(
-                                        onPressed: () {},
-                                        icon: Icon(Icons.comment),
-                                        label: Text("Comment")),
-                                    FlatButton.icon(
-                                        onPressed: () {},
-                                        icon: Icon(FontAwesomeIcons.share),
-                                        label: Text("Send")),
-                                  ],
-                                )
-                              ],
-                            ),
+                                  ),
+                                  SizedBox(
+                                    width: 7,
+                                  ),
+                                  Text(
+                                    facebook[i].name!,
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    width: 200,
+                                  ),
+                                  Icon(Icons.more_horiz),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Icon(Icons.close),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 30,
+                              ),
+                              Text(facebook[i].caption!),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Image.asset(
+                                "assets/images/mammootty.jpg",
+                                fit: BoxFit.cover,
+                                height: 350,
+                                width: MediaQuery.of(context).size.width,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  FlatButton.icon(
+                                      splashColor: Colors.blueAccent,
+                                      focusColor: Colors.blueAccent,
+                                      onPressed: () {},
+                                      icon: Icon(
+                                          Icons.thumb_up_alt_outlined),
+                                      label: Text("Like")),
+                                  FlatButton.icon(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.comment),
+                                      label: Text("Comment")),
+                                  FlatButton.icon(
+                                      onPressed: () {},
+                                      icon: Icon(FontAwesomeIcons.share),
+                                      label: Text("Send")),
+                                ],
+                              )
+                            ],
                           ),
                         );
                       }),
