@@ -22,54 +22,26 @@ class model_facebook {
 }
 
 class Facebook {
-  String? name1;
-  String? image1;
+  String? name;
+  String? image;
   String? imagex;
   String? caption;
-  String? name2;
-  String? image2;
-  String? imagey;
-  String? name3;
-  String? image3;
-  String? imagez;
 
-  Facebook(
-      {this.name1,
-        this.image1,
-        this.imagex,
-        this.caption,
-        this.name2,
-        this.image2,
-        this.imagey,
-        this.name3,
-        this.image3,
-        this.imagez});
+  Facebook({this.name, this.image, this.imagex, this.caption});
 
   Facebook.fromJson(Map<String, dynamic> json) {
-    name1 = json['name1'];
-    image1 = json['image1'];
+    name = json['name'];
+    image = json['image'];
     imagex = json['imagex'];
     caption = json['caption'];
-    name2 = json['name2'];
-    image2 = json['image2'];
-    imagey = json['imagey'];
-    name3 = json['name3'];
-    image3 = json['image3'];
-    imagez = json['imagez'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['name1'] = this.name1;
-    data['image1'] = this.image1;
+    data['name'] = this.name;
+    data['image'] = this.image;
     data['imagex'] = this.imagex;
     data['caption'] = this.caption;
-    data['name2'] = this.name2;
-    data['image2'] = this.image2;
-    data['imagey'] = this.imagey;
-    data['name3'] = this.name3;
-    data['image3'] = this.image3;
-    data['imagez'] = this.imagez;
     return data;
   }
 }
